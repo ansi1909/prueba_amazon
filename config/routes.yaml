@@ -1,14 +1,6 @@
 controllers:
-    resource:
-        path: ../src/Controller/
-        namespace: App\Controller
-    type: attribute
+    resource: '../src/Controller/'
+    type: annotation
 
-login:
-    path: /login
-    controller: App\Controller\SecurityController::login
 
-product_list:
-    path: /products
-    controller: App\Controller\ProductController::list
 

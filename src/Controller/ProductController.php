@@ -19,7 +19,7 @@ class ProductController extends AbstractController
      */
     public function list()
     {
-        $products = $this->productService->getProductsFromJson('../path/to/amazon.json');
+        $products = $this->productService->getProductsFromJson(dirname(__DIR__, 2) . '/config/json/amazon.json');
 
         return $this->render('product/list.html.twig', ['products' => $products]);
     }
