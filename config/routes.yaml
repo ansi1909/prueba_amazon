@@ -3,3 +3,12 @@ controllers:
         path: ../src/Controller/
         namespace: App\Controller
     type: attribute
+
+login:
+    path: /login
+    controller: App\Controller\SecurityController::login
+
+product_list:
+    path: /products
+    controller: App\Controller\ProductController::list
+
